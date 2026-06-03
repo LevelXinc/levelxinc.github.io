@@ -7,66 +7,84 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; background: #f4f4f8; color: #333; }
+    a.skip-link { position: absolute; left: -9999px; }
+    a.skip-link:focus { left: 0; top: 0; padding: 8px; background: #4A41B0; color: white; z-index: 999; }
     .header { background: linear-gradient(135deg, #8B82E8, #4A41B0); padding: 40px 24px; text-align: center; }
     .header h1 { color: white; font-size: 28px; margin-bottom: 4px; }
-    .header p { color: #d4d0f7; font-size: 14px; }
+    .header p { color: #e8e6ff; font-size: 14px; }
     .container { max-width: 720px; margin: 40px auto; background: white; border-radius: 16px; padding: 40px; }
-    h2 { color: #4A41B0; font-size: 18px; margin: 28px 0 10px; }
-    p { font-size: 15px; line-height: 1.7; margin-bottom: 12px; }
+    h2 { color: #3a31a0; font-size: 18px; margin: 28px 0 10px; }
+    p { font-size: 15px; line-height: 1.8; margin-bottom: 12px; color: #222; }
     ul { padding-left: 20px; margin-bottom: 12px; }
-    li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
-    .footer { text-align: center; padding: 24px; font-size: 13px; color: #aaa; }
-    a { color: #4A41B0; }
+    li { font-size: 15px; line-height: 1.8; margin-bottom: 6px; color: #222; }
+    .footer { text-align: center; padding: 24px; font-size: 13px; color: #555; }
+    a { color: #3a31a0; text-decoration: underline; }
+    a:focus { outline: 3px solid #4A41B0; outline-offset: 2px; }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <h1>⏸️ Pausely</h1>
-    <p>Terms of Service</p>
-  </div>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <div class="container">
-    <p><strong>Last updated: May 2026</strong></p>
+  <header role="banner">
+    <div class="header">
+      <img src="https://levelxinc.github.io/pausely/pausely-logo.png" 
+           width="80" height="80" 
+           style="border-radius:20px;" 
+           alt="Pausely app icon"/>
+      <h1>Pausely</h1>
+      <p>Terms of Service</p>
+    </div>
+  </header>
 
-    <h2>1. Acceptance of Terms</h2>
-    <p>By downloading or using Pausely, you agree to these Terms of Service. You must be 18 years or older to create an account and set up the app.</p>
+  <main id="main" role="main">
+    <div class="container">
+      <p><strong>Last updated: May 2026</strong></p>
 
-    <h2>2. About the App</h2>
-    <p>Pausely is a screen time management tool designed for parents and guardians to help manage children's device usage. It is not a guaranteed solution to prevent all unauthorized device use.</p>
+      <h2>1. Acceptance of Terms</h2>
+      <p>By downloading or using Pausely, you agree to these Terms of Service. You must be 18 years or older to create an account and set up the app.</p>
 
-    <h2>3. Parental Responsibility</h2>
-    <p>By using Pausely, you confirm that you are the legal parent or guardian of the child on the managed device. You are solely responsible for the settings you configure and how the app is used in your household.</p>
+      <h2>2. About the App</h2>
+      <p>Pausely is a screen time management tool designed for parents and guardians to help manage children's device usage. It is not a guaranteed solution to prevent all unauthorized device use.</p>
 
-    <h2>4. Free and Pro Features</h2>
-    <ul>
-      <li><strong>Free:</strong> Screen time tracking, break overlay, guardian PIN unlock, coins and streak rewards, emergency app whitelist, device admin protection</li>
-      <li><strong>Pro ($2.99/month or $19.99/year):</strong> Emergency Phone and WhatsApp access during breaks, guardian email unlock, weekly reports, multiple devices, advanced dashboard, unlockable themes</li>
-    </ul>
+      <h2>3. Parental Responsibility</h2>
+      <p>By using Pausely, you confirm that you are the legal parent or guardian of the child on the managed device. You are solely responsible for the settings you configure and how the app is used in your household.</p>
 
-    <h2>5. Subscriptions</h2>
-    <p>Pro subscriptions are billed through Google Play and auto-renew unless cancelled at least 24 hours before the end of the billing period. You can manage or cancel your subscription at any time through your Google Play account settings.</p>
+      <h2>4. Free and Pro Features</h2>
+      <ul>
+        <li><strong>Free:</strong> Screen time tracking, break overlay, guardian PIN unlock, coins and streak rewards, emergency app whitelist, device admin protection</li>
+        <li><strong>Pro ($2.99/month or $19.99/year):</strong> Emergency Phone and WhatsApp access during breaks, guardian email unlock, weekly reports, multiple devices, advanced dashboard, unlockable themes</li>
+      </ul>
 
-    <h2>6. Device Admin Privileges</h2>
-    <p>Pausely requests Device Administrator privileges to prevent unauthorized uninstallation by children. Granting this permission is voluntary. To uninstall Pausely, deactivate Device Admin first via Settings → Security → Device Admin Apps.</p>
+      <h2>5. Subscriptions</h2>
+      <p>Pro subscriptions are billed through Google Play and auto-renew unless cancelled at least 24 hours before the end of the billing period. You can manage or cancel your subscription at any time through your Google Play account settings.</p>
 
-    <h2>7. Accessibility Service</h2>
-    <p>Pausely uses Android's Accessibility Service solely to enforce app restrictions during scheduled break times. This service is not used to collect, record, or transmit any personal data.</p>
+      <h2>6. Device Admin Privileges</h2>
+      <p>Pausely requests Device Administrator privileges to prevent unauthorized uninstallation by children. Granting this permission is voluntary. To uninstall Pausely, deactivate Device Admin first via Settings → Security → Device Admin Apps.</p>
 
-    <h2>8. Limitation of Liability</h2>
-    <p>Pausely is provided as a parental aid. Level X does not guarantee that the app will prevent all unauthorized device use. We are not liable for any damages arising from use or inability to use the app.</p>
+      <h2>7. Accessibility Service</h2>
+      <p>Pausely uses Android's Accessibility Service solely to enforce app restrictions during scheduled break times. This service is not used to collect, record, or transmit any personal data.</p>
 
-    <h2>9. Changes to Terms</h2>
-    <p>We may update these Terms from time to time. Continued use of the app after changes constitutes acceptance of the new Terms.</p>
+      <h2>8. Accessibility Commitment</h2>
+      <p>Level X is committed to making Pausely accessible to all users including those with disabilities. We support Android TalkBack, minimum touch target sizes, and sufficient color contrast. To report an accessibility issue contact us at <a href="mailto:info@levelxinc.com">info@levelxinc.com</a>.</p>
 
-    <h2>10. Contact Us</h2>
-    <p>For questions about these Terms, contact us at:<br>
-    <a href="mailto:info@levelxinc.com">info@levelxinc.com</a></p>
-  </div>
+      <h2>9. Limitation of Liability</h2>
+      <p>Pausely is provided as a parental aid. Level X does not guarantee that the app will prevent all unauthorized device use. We are not liable for any damages arising from use or inability to use the app.</p>
 
-  <div class="footer">
-    <p>© 2026 Level X · <a href="../pausely/privacy.html">Privacy Policy</a> · <a href="../pausely/terms.html">Terms of Service</a></p>
-  </div>
+      <h2>10. Changes to Terms</h2>
+      <p>We may update these Terms from time to time. Continued use of the app after changes constitutes acceptance of the new Terms.</p>
+
+      <h2>11. Contact Us</h2>
+      <p>For questions about these Terms contact us at:<br>
+      <a href="mailto:info@levelxinc.com">info@levelxinc.com</a></p>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer">
+      <p>© 2026 Level X · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </footer>
 
 </body>
 </html>
