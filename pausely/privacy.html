@@ -7,78 +7,96 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; background: #f4f4f8; color: #333; }
+    a.skip-link { position: absolute; left: -9999px; }
+    a.skip-link:focus { left: 0; top: 0; padding: 8px; background: #4A41B0; color: white; z-index: 999; }
     .header { background: linear-gradient(135deg, #8B82E8, #4A41B0); padding: 40px 24px; text-align: center; }
     .header h1 { color: white; font-size: 28px; margin-bottom: 4px; }
-    .header p { color: #d4d0f7; font-size: 14px; }
+    .header p { color: #e8e6ff; font-size: 14px; }
     .container { max-width: 720px; margin: 40px auto; background: white; border-radius: 16px; padding: 40px; }
-    h2 { color: #4A41B0; font-size: 18px; margin: 28px 0 10px; }
-    p { font-size: 15px; line-height: 1.7; margin-bottom: 12px; }
+    h2 { color: #3a31a0; font-size: 18px; margin: 28px 0 10px; }
+    p { font-size: 15px; line-height: 1.8; margin-bottom: 12px; color: #222; }
     ul { padding-left: 20px; margin-bottom: 12px; }
-    li { font-size: 15px; line-height: 1.7; margin-bottom: 6px; }
-    .footer { text-align: center; padding: 24px; font-size: 13px; color: #aaa; }
-    a { color: #4A41B0; }
+    li { font-size: 15px; line-height: 1.8; margin-bottom: 6px; color: #222; }
+    .footer { text-align: center; padding: 24px; font-size: 13px; color: #555; }
+    a { color: #3a31a0; text-decoration: underline; }
+    a:focus { outline: 3px solid #4A41B0; outline-offset: 2px; }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <h1>⏸️ Pausely</h1>
-    <p>Privacy Policy</p>
-  </div>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <div class="container">
-    <p><strong>Last updated: May 2026</strong></p>
+  <header role="banner">
+    <div class="header">
+      <img src="https://levelxinc.github.io/pausely/pausely-logo.png" 
+           width="80" height="80" 
+           style="border-radius:20px;" 
+           alt="Pausely app icon"/>
+      <h1>Pausely</h1>
+      <p>Privacy Policy</p>
+    </div>
+  </header>
 
-    <h2>1. About Pausely</h2>
-    <p>Pausely is a parental screen time management app for Android developed by Level X. It helps parents manage and limit their children's screen time by enforcing structured breaks.</p>
+  <main id="main" role="main">
+    <div class="container">
+      <p><strong>Last updated: May 2026</strong></p>
 
-    <h2>2. Information We Collect</h2>
-    <p>Pausely collects only the minimum information necessary to operate the app:</p>
-    <ul>
-      <li>Parent email address</li>
-      <li>Child's first name</li>
-      <li>Device name</li>
-      <li>Screen time settings and break preferences</li>
-      <li>Break history, coins, and streak count</li>
-    </ul>
-    <p>Pausely does <strong>not</strong> collect location data, browsing history, payment information, or any data directly from children.</p>
+      <h2>1. About Pausely</h2>
+      <p>Pausely is a parental screen time management app for Android developed by Level X. It helps parents manage and limit their children's screen time by enforcing structured breaks.</p>
 
-    <h2>3. How We Use Your Information</h2>
-    <p>Information collected is used solely to:</p>
-    <ul>
-      <li>Operate and deliver the app's core features</li>
-      <li>Send guardian unlock codes via email (Pro feature)</li>
-      <li>Send weekly usage reports to parents (Pro feature)</li>
-      <li>Restore settings if the app is reinstalled</li>
-    </ul>
+      <h2>2. Information We Collect</h2>
+      <p>Pausely collects only the minimum information necessary to operate the app:</p>
+      <ul>
+        <li>Parent email address</li>
+        <li>Child's first name</li>
+        <li>Device name</li>
+        <li>Screen time settings and break preferences</li>
+        <li>Break history, coins, and streak count</li>
+      </ul>
+      <p>Pausely does <strong>not</strong> collect location data, browsing history, payment information, or any data directly from children.</p>
 
-    <h2>4. COPPA Compliance</h2>
-    <p>Pausely is designed for use by parents and guardians. All information is entered by the parent only. We do not knowingly collect any personal information from children under the age of 13.</p>
+      <h2>3. How We Use Your Information</h2>
+      <p>Information collected is used solely to:</p>
+      <ul>
+        <li>Operate and deliver the app's core features</li>
+        <li>Send guardian unlock codes via email (Pro feature)</li>
+        <li>Send weekly usage reports to parents (Pro feature)</li>
+        <li>Restore settings if the app is reinstalled</li>
+      </ul>
 
-    <h2>5. Data Storage</h2>
-    <p>All app data is stored locally on the device using Android SharedPreferences. No personal data is transmitted to external servers except where required for Pro features (EmailJS for guardian emails, RevenueCat for subscription management).</p>
+      <h2>4. COPPA Compliance</h2>
+      <p>Pausely is designed for use by parents and guardians. All information is entered by the parent only. We do not knowingly collect any personal information from children under the age of 13.</p>
 
-    <h2>6. Third Party Services</h2>
-    <ul>
-      <li><strong>RevenueCat</strong> — manages Pro subscriptions via Google Play Billing</li>
-      <li><strong>EmailJS</strong> — sends guardian unlock code emails and weekly reports (Pro only)</li>
-      <li><strong>Google Play Billing</strong> — processes subscription payments</li>
-    </ul>
+      <h2>5. Data Storage</h2>
+      <p>All app data is stored locally on the device using Android SharedPreferences. No personal data is transmitted to external servers except where required for Pro features — EmailJS for guardian emails and RevenueCat for subscription management.</p>
 
-    <h2>7. Data Security</h2>
-    <p>Your data is stored locally on your device and is never sold or transferred to third parties for advertising or marketing purposes.</p>
+      <h2>6. Third Party Services</h2>
+      <ul>
+        <li><strong>RevenueCat</strong> — manages Pro subscriptions via Google Play Billing</li>
+        <li><strong>EmailJS</strong> — sends guardian unlock code emails and weekly reports (Pro only)</li>
+        <li><strong>Google Play Billing</strong> — processes subscription payments</li>
+      </ul>
 
-    <h2>8. Your Rights</h2>
-    <p>You may access or delete your data at any time by clearing the app's data in your Android device settings. To request complete data deletion, contact us at the email below.</p>
+      <h2>7. Data Security</h2>
+      <p>Your data is stored locally on your device and is never sold or transferred to third parties for advertising or marketing purposes.</p>
 
-    <h2>9. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:<br>
-    <a href="mailto:info@levelxinc.com">info@levelxinc.com</a></p>
-  </div>
+      <h2>8. Your Rights</h2>
+      <p>You may access or delete your data at any time by clearing the app's data in your Android device settings. To request complete data deletion, contact us at the email below.</p>
 
-  <div class="footer">
-    <p>© 2026 Level X · <a href="../pausely/privacy.html">Privacy Policy</a> · <a href="../pausely/terms.html">Terms of Service</a></p>
-  </div>
+      <h2>9. Accessibility</h2>
+      <p>Pausely is committed to accessibility. The app supports Android TalkBack screen reader, meets minimum touch target sizes, and uses sufficient color contrast throughout. To report an accessibility issue contact us at <a href="mailto:info@levelxinc.com">info@levelxinc.com</a>.</p>
+
+      <h2>10. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy please contact us at:<br>
+      <a href="mailto:info@levelxinc.com">info@levelxinc.com</a></p>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer">
+      <p>© 2026 Level X · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </footer>
 
 </body>
 </html>
