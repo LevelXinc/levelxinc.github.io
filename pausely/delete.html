@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pausely — Data Deletion Request</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --purple:#4A41B0;
+    --indigo:#251F5C;
+    --lilac:#8B82E8;
+    --mist:#F3F1FB;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--mist);
+    color:var(--indigo);
+    font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,sans-serif;
+    line-height:1.65;
+    padding:2.5rem 1.25rem 4rem;
+  }
+  .wrap{max-width:720px;margin:0 auto;background:#fff;border-radius:20px;padding:2.5rem 2rem;box-shadow:0 8px 30px rgba(37,31,92,.08);}
+  h1{font-family:"Fredoka",sans-serif;color:var(--purple);font-size:1.9rem;margin:0 0 .25rem;}
+  h2{font-family:"Fredoka",sans-serif;color:var(--purple);font-size:1.2rem;margin:2rem 0 .6rem;}
+  .sub{color:var(--lilac);font-weight:600;margin:0 0 1.75rem;}
+  a{color:var(--purple);font-weight:600;}
+  ol,ul{padding-left:1.25rem;}
+  li{margin:.4rem 0;}
+  table{width:100%;border-collapse:collapse;margin-top:.5rem;font-size:.95rem;}
+  th,td{text-align:left;padding:.6rem .75rem;border-bottom:1px solid var(--mist);vertical-align:top;}
+  th{color:var(--purple);font-weight:600;}
+  .updated{margin-top:2.5rem;color:#7a76a0;font-size:.85rem;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Data Deletion Request</h1>
+    <p class="sub">Pausely — developed by Level X Apps</p>
+
+    <p>This page explains how to request deletion of your data associated with <strong>Pausely</strong>, the parental screen-time app published by Level X Apps. We built Pausely to keep your family's data minimal, and most of it never leaves your device.</p>
+
+    <h2>How to request deletion</h2>
+    <ol>
+      <li>Email <a href="mailto:info@levelxinc.com">info@levelxinc.com</a> with the subject line <strong>"Pausely Data Deletion Request."</strong></li>
+      <li>So we can locate and delete your purchase record, include the email address used for your Google Play purchase and/or your Google Play order ID.</li>
+      <li>We will process your request and confirm by email, typically within 30 days.</li>
+    </ol>
+    <p>To remove all data stored on your device immediately, you can also uninstall Pausely or clear its app data in your Android settings at any time — this requires no request to us.</p>
+
+    <h2>What data is deleted, and what is kept</h2>
+    <table>
+      <tr><th>Data</th><th>Where it lives</th><th>Deletion &amp; retention</th></tr>
+      <tr>
+        <td>App settings, screen-time counters, and PIN</td>
+        <td>Stored only on your device. Never sent to us.</td>
+        <td>Removed immediately when you uninstall Pausely or clear its app data.</td>
+      </tr>
+      <tr>
+        <td>Purchase history (subscriptions / lifetime)</td>
+        <td>Held by our payments provider, RevenueCat, on our behalf, tied to an anonymous ID.</td>
+        <td>Deleted from RevenueCat upon your request. Note: Google Play retains its own transaction records under Google's policies; those are controlled by Google and we cannot delete them.</td>
+      </tr>
+      <tr>
+        <td>Email address (only if you used the guardian email-unlock feature)</td>
+        <td>Sent through our email provider, EmailJS, solely to deliver your unlock code. We do not store it in a database.</td>
+        <td>Not retained by us. EmailJS may keep transient delivery logs under its own retention policy.</td>
+      </tr>
+    </table>
+
+    <p>Pausely does not collect or transmit your child's app usage or screen content. It only measures how long the screen is on, on your device, to time breaks — that information is never sent to us and is removed when the app is uninstalled.</p>
+
+    <p class="updated">Last updated: June 2026 · Questions? <a href="mailto:info@levelxinc.com">info@levelxinc.com</a></p>
+  </div>
+</body>
+</html>
